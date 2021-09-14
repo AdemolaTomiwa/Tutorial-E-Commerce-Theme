@@ -1,0 +1,285 @@
+@import 'config';
+@import 'utilities';
+@import 'sign-up';
+@import 'sign-in';
+@import 'products';
+@import 'shopping-cart';
+@import 'shipping';
+@import 'payment';
+@import 'confirm';
+@import 'user-profile';
+
+* {
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 17px;
+   line-height: 1.6;
+   width: 100%;
+   height: 100%;
+   background-color: $white-color;
+   color: $black-color;
+}
+
+// Header
+header {
+   background-color: $primary-color;
+   color: $white-color;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+
+   .logo {
+      a {
+         color: $white-color;
+      }
+   }
+
+   .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+         margin-left: 2rem;
+
+         i {
+            color: $white-color;
+         }
+      }
+   }
+}
+
+// Showcase
+#showcase {
+   background-color: $light-color;
+   padding: 1rem 0;
+
+   .showcase {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         margin-top: 2.5rem;
+         height: 500px;
+         object-fit: cover;
+      }
+   }
+}
+
+// Dr Martens
+#dr-martens {
+   background-color: $primary-color;
+   color: $white-color;
+
+   .dr-martens {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+
+      .img {
+         flex: 1;
+
+         img {
+            height: 100%;
+            width: 90%;
+            object-fit: cover;
+         }
+      }
+
+      .content {
+         flex: 2;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: center;
+         padding: 0 3rem;
+      }
+   }
+}
+
+// Jimmy Choo
+#jimmy-choo {
+   background-color: $light-color;
+   padding: 1.5rem 0;
+
+   .jimmy-choo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+         height: 500px;
+         margin-top: 2.5rem;
+         object-fit: cover;
+      }
+   }
+}
+
+// Boxes
+#boxes {
+   background-color: $light-color;
+   padding: 1rem 0;
+
+   .boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+
+      .box {
+         background-color: $grey-color;
+         padding: 2rem;
+
+         h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+         }
+      }
+
+      .last {
+         background-color: $primary-color;
+
+         h3 {
+            color: $white-color;
+         }
+      }
+   }
+}
+
+// Top Brands
+#top-brands {
+   background-color: $black-color;
+   color: $white-color;
+   padding: 2rem 0;
+
+   .top-brands {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+
+         img {
+            cursor: pointer;
+            width: 200px;
+         }
+      }
+   }
+}
+
+// Discount
+#discount {
+   background-color: $primary-color;
+   color: $white-color;
+   padding: 3rem 0;
+
+   .discount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+         flex: 1;
+         margin: 0 1rem;
+         text-align: center;
+      }
+
+      .logo {
+         h2 {
+            line-height: 1.1;
+         }
+      }
+
+      .content {
+         p {
+            margin: 0.5rem;
+         }
+      }
+
+      .sign-up {
+         button {
+            background-color: $white-color;
+            color: $primary-color;
+         }
+      }
+   }
+}
+
+// Social
+#social {
+   background-color: $white-color;
+   color: $primary-color;
+   padding: 2rem 0;
+
+   .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      i {
+         font-size: 2.5rem;
+         margin: 1rem;
+         margin-bottom: 0;
+      }
+   }
+}
+
+// Footer
+footer {
+   background-color: $grey-color;
+   color: $black-color;
+   padding: 2rem 0;
+
+   .news {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+
+      form {
+         width: 100%;
+         text-align: center;
+
+         input {
+            width: 70%;
+            border: 2px solid $white-color;
+            margin-right: -5px;
+         }
+
+         button {
+            background-color: $primary-color;
+            color: $white-color;
+            font-size: 1.2rem;
+            border: 2px solid $white-color;
+         }
+      }
+   }
+
+   .copyright {
+      color: $primary-color;
+      font-weight: bold;
+
+      small {
+         display: block;
+      }
+   }
+}
+
+@import 'mobile';

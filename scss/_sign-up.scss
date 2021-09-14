@@ -1,0 +1,17 @@
+.sign-up {
+   padding: 2rem 0;
+
+   h2 {
+      color: $primary-color;
+   }
+
+   h4 {
+      margin-bottom: 1rem;
+   }
+
+   button {
+      background-color: $primary-color;
+      color: $white-color;
+      width: 100%;
+   }
+}

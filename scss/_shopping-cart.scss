@@ -1,0 +1,37 @@
+.shopping-cart {
+   padding: 2rem 0;
+
+   h2 {
+      color: $primary-color;
+      margin-bottom: 2rem;
+   }
+
+   .items {
+      .item {
+         background-color: $grey-color;
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         margin: 1rem 0;
+
+         div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $black-color;
+
+            img {
+               width: 150px;
+            }
+         }
+      }
+   }
+
+   .total {
+      padding: 2rem 0;
+
+      button {
+         background-color: $primary-color;
+         color: $white-color;
+      }
+   }
+}

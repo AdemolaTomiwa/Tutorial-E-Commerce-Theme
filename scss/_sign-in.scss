@@ -1,0 +1,45 @@
+.sign-in {
+   padding: 2rem 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   .login-section {
+      padding: 0 4rem;
+      border-right: 1px solid $primary-color;
+
+      h2 {
+         color: $primary-color;
+      }
+
+      h4 {
+         margin-bottom: 1.5rem;
+      }
+
+      p {
+         display: none;
+      }
+
+      button {
+         background-color: $primary-color;
+         color: $white-color;
+         width: 100%;
+      }
+   }
+
+   .create-acct-section {
+      padding: 0 4rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+
+      h2 {
+         color: $primary-color;
+      }
+
+      button {
+         background-color: $primary-color;
+         color: $white-color;
+      }
+   }
+}

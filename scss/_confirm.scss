@@ -1,0 +1,47 @@
+.confirm {
+   padding: 2rem 0;
+
+   h2 {
+      color: $primary-color;
+      margin-bottom: 2rem;
+   }
+
+   .box {
+      background-color: $light-color;
+      padding: 1rem;
+      margin: 1rem 0;
+   }
+
+   .ordered-items {
+      .items {
+         margin-top: 1rem;
+         padding: 0 2rem;
+
+         .item {
+            background-color: $grey-color;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0.5rem 0;
+
+            div {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               padding: 0.5rem 0;
+               border: 1px solid $black-color;
+            }
+         }
+      }
+   }
+
+   .summary {
+      p {
+         margin: 0.5rem 0;
+      }
+   }
+
+   button {
+      background-color: $primary-color;
+      color: $white-color;
+   }
+}

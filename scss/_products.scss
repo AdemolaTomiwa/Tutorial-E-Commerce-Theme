@@ -1,0 +1,103 @@
+.products {
+   .back {
+      font-size: 1rem;
+   }
+
+   .product {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .img {
+         img {
+            height: 100%;
+         }
+      }
+
+      .content {
+         padding: 0 3rem;
+
+         h2 {
+            color: $primary-color;
+         }
+
+         form {
+            p {
+               margin-top: 0.5rem;
+               color: $primary-color;
+            }
+
+            select {
+               -webkit-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               border: none;
+               outline: none;
+            }
+
+            .select {
+               position: relative;
+               overflow: hidden;
+
+               select {
+                  border: 2px solid $primary-color;
+                  padding: 0.5rem 1rem;
+                  margin: 0.5rem 0;
+                  width: 100%;
+                  font-size: 1.2rem;
+                  cursor: pointer;
+                  position: relative;
+               }
+            }
+
+            .select::after {
+               content: '\25BC';
+               position: absolute;
+               top: 15%;
+               color: $primary-color;
+               right: 0;
+               padding: 0.4rem 1rem;
+               pointer-events: none;
+               transition: all ease-out 0.5s;
+            }
+
+            .select:hover::after {
+               background-color: $primary-color;
+               color: $white-color;
+            }
+
+            button {
+               background-color: $primary-color;
+               color: $white-color;
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+.line {
+   background-color: $primary-color;
+   height: 1px;
+   width: 75%;
+   margin: 4rem auto;
+}
+
+.description,
+.key-features {
+   h3 {
+      color: $primary-color;
+      margin-bottom: 2rem;
+   }
+
+   li {
+      margin: 1rem 0;
+
+      i {
+         font-size: 1rem;
+      }
+   }
+}
+
+.key-features {
+   margin-bottom: 4rem;
+}
